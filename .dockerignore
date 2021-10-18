@@ -5,3 +5,4 @@ mi-pagina
 .gitignore
 Dockerfile
 README.md
+node_modules
