@@ -1,0 +1,14 @@
+version: "3.9"
+
+services: 
+  app:
+    image: curso-docker
+    environment:
+      - MONGO_URL=mongodb://db:27017/curso
+    depends_on:
+      - db
+    ports: 
+      - "3000:3000"
+      
+  db:
+    image: mongo
